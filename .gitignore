@@ -1,0 +1,12 @@
+# Ignore compiled dbt artifacts
+logs/
+target/
+dbt_packages/
+dbt_modules/
+
+# Ignore Python virtual environment
+venv/
+climate_analytics_venv/
+
+# Ignore Google Cloud service account keys (if used)
+*.json
