@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_global_temperatures
+    description: "Staging model for global temperature data from NOAA GSOD"
+    columns:
+      - name: station_id
+        description: "Weather station identifier"
+      - name: year
+        description: "Year of the observation"
+      - name: month
+        description: "Month of the observation"
+      - name: day
+        description: "Day of the observation"
+      - name: avg_temperature
+        description: "Average daily temperature in Celsius"
+        tests:
+          - not_null
+      - name: dew_point
+        description: "Dew point temperature"
+      - name: sea_level_pressure
+        description: "Sea level pressure in hPa"
+      - name: station_pressure
+        description: "Station pressure in hPa"
+      - name: visibility
+        description: "Visibility in kilometers"
+      - name: wind_speed
+        description: "Wind speed in km/h"
+      - name: max_temperature
+        description: "Maximum daily temperature"
+      - name: min_temperature
+        description: "Minimum daily temperature"
+      - name: precipitation
+        description: "Precipitation in mm"
+      - name: fog
+        description: "Boolean flag indicating foggy conditions"
